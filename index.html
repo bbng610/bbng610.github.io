@@ -225,21 +225,29 @@
       <div class="card">
        <div class="card-body">
            <h4 class="card-title">Buy or Sell signals</h4>
-            <div class="feed-widget" align="center">
-                <ul class="list-style-none feed-body m-0 p-b-20" align="center">
-                    <!-- TradingView Widget BEGIN begins-->
-<div class="tradingview-widget-container d-md-flex align-items-center">
-  <div class="tradingview-widget-container__widget d-md-flex align-items-center"></div>
-  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+            <div class="feed-widget align-items-center">
+                <ul class="list-style-none feed-body m-0 p-b-20 align-items-center">
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container align-items-center">
+  <div class="tradingview-widget-container__widget align-items-center"></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-forex-cross-rates.js" async>
   {
-  "interval": "1h",
-  "width": 425,
+  "width": "100%",
+  "height": "100%",
+  "currencies": [
+    "EUR",
+    "USD",
+    "JPY",
+    "GBP",
+    "CHF",
+    "AUD",
+    "CAD",
+    "NZD",
+    "HKD"
+  ],
   "isTransparent": false,
-  "height": 450,
-  "symbol": "FX:USDJPY",
-  "showIntervalTabs": true,
-  "locale": "en",
-  "colorTheme": "dark"
+  "colorTheme": "dark",
+  "locale": "en"
 }
   </script>
 </div>
