@@ -124,10 +124,9 @@
                     </ul>
                 </div>
 
-                                                                    <!-- TradingView Widget BEGIN -->
+<!-- TradingView Widget BEGIN -->
 <div class="tradingview-widget-container">
   <div class="tradingview-widget-container__widget"></div>
-  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/markets/" rel="noopener" target="_blank"><span class="blue-text">Markets today</span></a> by TradingView</div>
   <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
   {
   "symbols": [
@@ -280,22 +279,42 @@
                             <div class="card-body">
                                 <div class="d-md-flex align-items-center">
                                     <div>
-                                        <h4 class="card-title">Summary</h4>
-                                        <h5 class="card-subtitle">Overview of Latest Month</h5>
+                                        <h4 class="card-title" align="center">Forex Heat Chart</h4>
                                     </div>
                                     <div class="ms-auto d-flex no-block align-items-center">
-                                        <ul class="list-inline font-12 dl m-r-15 m-b-0">
-                                            <li class="list-inline-item text-info"><i class="fa fa-circle"></i> Iphone
-                                            </li>
-                                            <li class="list-inline-item text-primary"><i class="fa fa-circle"></i> Ipad
-                                            </li>
-                                        </ul>
+
                                     </div>
                                 </div>
                                 <div class="row">
                                     <!-- column -->
                                     <div class="col-lg-12">
-                                        <div class="campaign ct-charts"></div>
+                                        <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/markets/currencies/" rel="noopener" target="_blank"><span class="blue-text">Forex market</span></a> by TradingView</div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-forex-cross-rates.js" async>
+  {
+  "width": 770,
+  "height": 400,
+  "currencies": [
+    "EUR",
+    "USD",
+    "JPY",
+    "GBP",
+    "CHF",
+    "AUD",
+    "CAD",
+    "NZD",
+    "HKD"
+  ],
+  "isTransparent": false,
+  "colorTheme": "dark",
+  "locale": "en"
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
+                                    <!--    <div class="campaign ct-charts"></div>-->
                                     </div>
                                     <!-- column -->
                                 </div>
