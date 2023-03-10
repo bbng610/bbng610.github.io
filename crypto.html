@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords"
+        content="admin dashboard, html css dashboard, web dashboard, ">
+    <meta name="description"
+        content="Admin Dashboard for different functions">
+    <meta name="robots" content="noindex,nofollow">
+    <title>Dashboard</title>
+    <link rel="canonical" href="" />
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/favicon_io/favicon-16x16.png">
+    <!-- Custom CSS -->
+    <link href="../../assets/libs/chartist/dist/chartist.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="../../dist/css/style.min.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+    <!-- ============================================================== -->
+    <!-- Preloader - style you can find in spinners.css -->
+    <!-- ============================================================== -->
+    <div class="preloader">
+        <div class="lds-ripple">
+            <div class="lds-pos"></div>
+            <div class="lds-pos"></div>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <div id="main-wrapper" data-layout="vertical" data-navbarbg="skin5" data-sidebartype="full"
+        data-sidebar-position="absolute" data-header-position="absolute" data-boxed-layout="full">
+        <!-- ============================================================== -->
+        <!-- Topbar header - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+        <header class="topbar" data-navbarbg="skin5">
+
+
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+  {
+  "symbols": [
+    {
+      "proName": "FOREXCOM:SPXUSD",
+      "title": "S&P 500"
+    },
+    {
+      "proName": "BITSTAMP:BTCUSD",
+      "title": "Bitcoin"
+    },
+    {
+      "description": "XRP",
+      "proName": "BITFLYER:XRPJPY"
+    },
+    {
+      "description": "USDJPY",
+      "proName": "OANDA:USDJPY"
+    },
+    {
+      "description": "Intel",
+      "proName": "NASDAQ:INTC"
+    },
+    {
+      "description": "PhilipMorris",
+      "proName": "NYSE:PM"
+    }
+  ],
+  "showSymbolLogo": true,
+  "colorTheme": "dark",
+  "isTransparent": false,
+  "displayMode": "adaptive",
+  "locale": "en"
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
+
+
+            </nav>
+        </header>
+
+        <!-- ============================================================== -->
+        <!-- End Topbar header -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <aside class="left-sidebar" data-sidebarbg="skin6">
+            <!-- Sidebar scroll-->
+            <div class="scroll-sidebar">
+                <!-- Sidebar navigation-->
+                <nav class="sidebar-nav">
+                    <ul id="sidebarnav">
+                        <!-- User Profile-->
+                        <li>
+                            <!-- User Profile-->
+                            <div class="user-profile d-flex no-block dropdown m-t-20">
+                                <div class="user-pic"><img src="../../assets/images/favicon_io/favicon-32x32.png" alt="users"
+                                        class="rounded-circle" width="40" /></div>
+                                <div class="user-content hide-menu m-l-10">
+                                    <a href="#" class="" id="Userdd" role="button"
+                                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <h5 class="m-b-0 user-name font-medium">BBong <i
+                                                class="fa fa-angle-down"></i></h5>
+                                        <span class="op-5 user-email">Your email goes here</span>
+                                    </a>
+                            </div>
+                            </div>
+                         </li>
+
+                        <!-- User Profile-->
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="index.html" aria-expanded="false"><i class="mdi mdi-view-dashboard"></i><span
+                                    class="hide-menu">Dashboard</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="crypto.html" aria-expanded="false"><i
+                                    class="mdi mdi-account-network"></i><span class="hide-menu">Crypto</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="table-basic.html" aria-expanded="false"><i class="mdi mdi-border-all"></i><span
+                                    class="hide-menu">Forex</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="icon-material.html" aria-expanded="false"><i class="mdi mdi-face"></i><span
+                                    class="hide-menu">Stocks</span></a></li>
+                    </ul>
+
+                </nav>
+                <!-- End Sidebar navigation -->
+            </div>
+            <!-- End Sidebar scroll-->
+        </aside>
+        <!-- ============================================================== -->
+        <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Page wrapper  -->
+        <!-- ============================================================== -->
+        <div class="page-wrapper">
+            <!-- ============================================================== -->
+            <!-- Bread crumb and right sidebar toggle -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- End Bread crumb and right sidebar toggle -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- Container fluid  -->
+            <!-- ============================================================== -->
+            <div class="container-fluid">
+                <!-- ============================================================== -->
+                <!-- Sales chart -->
+                <!-- ============================================================== -->
+                <div class="row" align="center">
+                   <div class="col-md-8 align-items-center">
+                       <div class="card align-items-center">
+                      <!-- <div class="col-xl-12 align-items-center"> -->
+                          <div class="card-body align-items-center">
+                             <div class="align-items-center">
+                               <div>
+                             <h4 class="card-title align-items-center">Forex Heat Chart</h4>
+                                 </div>
+                             </div>
+                              </div>
+                          <div class="col-xl-12 align-items-center">
+<!-- column -->
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container card-body">
+  <div class="tradingview-widget-container__widget card-body"></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-forex-cross-rates.js" async>
+  {
+  "width": "100%",
+  "height": "250",
+  "currencies": [
+    "EUR",
+    "USD",
+    "JPY",
+    "GBP",
+    "AUD",
+    "CAD",
+    "NZD"
+  ],
+  "isTransparent": false,
+  "colorTheme": "dark",
+  "locale": "en"
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
+<!--    <div class="campaign ct-charts"></div>-->
+<!-- column -->
+</div>
+<!-- </div> -->
+</div>
+<div class="card align-items-center">
+<div class="card-body align-items-center"><div><h4>  </h4></div></div>
+
+<div class="col-xl-12 align-items-center">
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-forex-heat-map.js" async>
+  {
+  "width": "98%",
+  "height": "250",
+  "currencies": [
+    "EUR",
+    "USD",
+    "JPY",
+    "GBP",
+    "AUD",
+    "CAD",
+    "NZD"
+  ],
+  "isTransparent": false,
+  "colorTheme": "dark",
+  "locale": "en"
+}
+</script>
+</div>
+<!-- TradingView Widget END -->
+</div>
+</div>
+
+</div>
+
+     <div class="col-md-4">
+      <div class="card">
+       <div class="card-body">
+           <h4 class="card-title">Buy or Sell signals</h4>
+            <div class="feed-widget align-items-center">
+                <ul class="list-style-none feed-body m-0 p-b-20 align-items-center">
+ <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container col-md-4">
+  <div class="tradingview-widget-container__widget col-md-4"></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+  {
+  "interval": "1h",
+  "width": "100%",
+  "isTransparent": false,
+  "height": "440",
+  "symbol": "OANDA:USDJPY",
+  "showIntervalTabs": true,
+  "locale": "en",
+  "colorTheme": "dark"
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ============================================================== -->
+                <!-- Sales chart -->
+                <!-- ============================================================== -->
+                <!-- ============================================================== -->
+                <!-- Table -->
+                <!-- ============================================================== -->
+                <div class="row">
+                    <!-- column -->
+                    <div class="col-12 align-items-center">
+                        <div class="card align-items-center">
+                            <div class="card-body align-items-center">
+                                <!-- title -->
+                                <div class="d-md-flex">
+                                    <div>
+                                        <h4 class="card-title">Stock Screener</h4>
+                                    </div>
+                                </div>
+                                <!-- title -->
+                            </div>
+                            <div class="col-12 align-items-center">
+                                <table class="table v-middle align-items-center">
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/markets/cryptocurrencies/prices-all/" rel="noopener" target="_blank"><span class="blue-text">Crypto markets</span></a> by TradingView</div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-screener.js" async>
+  {
+  "width": "100%",
+  "height": "100%",
+  "defaultColumn": "moving_averages",
+  "screener_type": "crypto_mkt",
+  "displayCurrency": "USD",
+  "colorTheme": "dark",
+  "locale": "en"
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ============================================================== -->
+                <!-- Table -->
+                <!-- ============================================================== -->
+                <!-- ============================================================== -->
+                <!-- Recent comment and chats -->
+                <!-- ============================================================== -->
+               <div class="row">
+                    <!-- column -->
+                    <div class="col-lg-5">
+                        <div class="card">
+						<div class ="card-body" align="center">
+						 <h4 class="card-title">Economic Calender</h4>
+                           <!-- TradingView Widget BEGIN Economic Calendar-->
+<div class="tradingview-widget-container" align="center">
+  <div class="tradingview-widget-container__widget" align="center"></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-events.js" async>
+  {
+  "colorTheme": "dark",
+  "isTransparent": false,
+  "width": "100%",
+  "height": "600",
+  "locale": "en",
+  "importanceFilter": "0,1",
+  "currencyFilter": "AUD,USD,CAD,EUR,DEM,JPY,NZD,GBP"
+}
+  </script>
+</div>
+</div>
+<!-- TradingView Widget END -->
+                        </div>
+                    </div>
+                    <!-- column -->
+                    <div class="col-lg-7">
+                        <div class="card">
+                            <div class="card-body">
+                         <h4 class="card-title" align="center">Chart</h4>
+                            
+<!-- TradingView Widget BEGIN -->
+
+<div class="tradingview-widget-container">
+  <div id="tradingview_2e11f"></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+  <script type="text/javascript">
+  new TradingView.widget(
+  {
+  "width": "100%",
+  "height": "600",
+  "symbol": "BITFLYER:XRPJPY",
+  "interval": "D",
+  "timezone": "Asia/Tokyo",
+  "theme": "dark",
+  "style": "1",
+  "locale": "en",
+  "toolbar_bg": "#f1f3f6",
+  "enable_publishing": false,
+  "hide_legend": true,
+  "allow_symbol_change": true,
+  "save_image": false,
+  "container_id": "tradingview_2e11f"
+}
+  );
+  </script>
+</div>
+<!-- TradingView Widget END -->				
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ============================================================== -->
+                <!-- Recent comment and chats -->
+                <!-- ============================================================== -->
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Container fluid  -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- footer -->
+            <!-- ============================================================== -->
+            <footer class="footer text-center">
+                All Rights Reserved by bbng610.
+            </footer>
+            <!-- ============================================================== -->
+            <!-- End footer -->
+            <!-- ============================================================== -->
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Page wrapper  -->
+        <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <script src="../../assets/libs/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="../../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../dist/js/app-style-switcher.js"></script>
+    <!--Wave Effects -->
+    <script src="../../dist/js/waves.js"></script>
+    <!--Menu sidebar -->
+    <script src="../../dist/js/sidebarmenu.js"></script>
+    <!--Custom JavaScript -->
+    <script src="../../dist/js/custom.js"></script>
+    <!--This page JavaScript -->
+    <!--chartis chart-->
+    <script src="../../assets/libs/chartist/dist/chartist.min.js"></script>
+    <script src="../../assets/libs/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js"></script>
+    <script src="../../dist/js/pages/dashboards/dashboard1.js"></script>
+</body>
+
+</html>
