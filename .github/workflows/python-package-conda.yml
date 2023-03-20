@@ -33,5 +33,3 @@ jobs:
         conda install pytest
         pytest
         
-        python -m http.server
-
