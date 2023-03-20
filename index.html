@@ -392,6 +392,22 @@
             <!-- ============================================================== -->
             <footer class="footer text-center">
                 All Rights Reserved by bbng610.
+                <script>
+      $(document).ready(function() {
+        $.ajax({
+          url: "example.py",
+          type: "GET",
+          success: function(result) {
+            $("#result").text(result);
+          },
+          error: function(xhr, status, error) {
+            console.log(xhr);
+            console.log(status);
+            console.log(error);
+          }
+        });
+      });
+      </>script>
             </footer>
             <!-- ============================================================== -->
             <!-- End footer -->
