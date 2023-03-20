@@ -16,7 +16,9 @@ print (get_current_time())
 #!/usr/bin/env python3
 
 form = cgi.FieldStorage()
-name = form.getvalue("name")
+#name = form.getvalue("name")
+
+name ="Billy"
 
 print("Content-type:text/html\r\n\r\n")
 print("<html>")
